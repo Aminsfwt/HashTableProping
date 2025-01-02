@@ -1,5 +1,5 @@
 
-#Hash Table Data Structure to deal with colission data using linear propintg
+#Hash Table Data Structure to deal with collision data using linear probing
 
 class HashTable:
     def __init__(self):
@@ -60,28 +60,3 @@ class HashTable:
             if self.arr[prob_index][0] == key:
                 self.arr[prob_index]=None
         print(self.arr)    
-
-hash = HashTable()        
-#print(hash.get_prob_range(30))
-
-hash['march 1'] = 10
-hash['march 2'] = 20
-hash['march 3'] = 230
-hash['march 4'] = 410
-hash['march 6'] = 1025
-hash['march 7'] = 15540
-hash['march 8'] = 5410
-hash['march 9'] = 140
-hash['march 10'] = 1150
-
-print(hash['march 3'])
-
-hash['march 3'] = 2304
-
-print(hash['march 3'])
-
-print(hash.arr)
-
-del hash['march 7'] 
-
-print(hash.arr)
